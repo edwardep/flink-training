@@ -70,6 +70,7 @@ public class RideCleansingExercise extends ExerciseBase {
 			//throw new MissingSolutionException();
 			if (GeoUtils.isInNYC(taxiRide.startLon, taxiRide.startLat) && GeoUtils.isInNYC(taxiRide.endLon, taxiRide.endLat))
 			{
+				System.out.println("success");
 				return true;
 			}
 			return false;
